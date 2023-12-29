@@ -5,7 +5,6 @@ declare module '*.vue' {
   const component: DefineComponent<{}, {}, any>;
   export default component;
 }
-
-declare module 'curl-to-json-object' {
-  export default function curl_to_json(payload: string): any;
+declare module 'curl-to-json-convert' {
+  export default function convertToJson(curlString: string): any;
 }
