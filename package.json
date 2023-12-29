@@ -7,13 +7,13 @@
     "build": "vue-tsc --noEmit && vite build",
     "icon": "curl https://at.alicdn.com/t/c/font_1853655_4i93xakt7p5.js > ./src/assets/iconfont.js"
   },
-  "author": "brzhang",
+  "author": "Renkin",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^18.7.18",
     "@vitejs/plugin-vue": "^3.1.0",
     "consola": "^2.15.3",
-    "sass": "^1.55.0",
+    "less": "^4.2.0",
     "typescript": "^4.8.3",
     "utools-api-types": "^3.0.0",
     "vite": "^3.1.3",
@@ -24,8 +24,10 @@
   "dependencies": {
     "@vueuse/core": "^9.2.0",
     "axios": "^0.27.2",
+    "curl-to-json-object": "^0.0.3",
     "dayjs": "^1.11.5",
     "element-plus": "^2.2.17",
+    "json-to-ts": "^1.7.0",
     "vue": "^3.2.39",
     "vue-router": "^4.1.5"
   }

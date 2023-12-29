@@ -1,9 +1,9 @@
 {
-  "name": "author",
-  "pluginName": "pluginName",
-  "description": "plugin description",
-  "author": "https://github.com/bravekingzhang",
-  "homepage": "https://github.com/bravekingzhang/your-plugin-name",
+  "name": "Jarvis",
+  "pluginName": "Jarvis",
+  "description": "Renkin`s Jarvis",
+  "author": "Renkin",
+  "homepage": "https://github.com/rennzhang",
   "version": "1.0.0",
   "logo": "logo.png",
   "main": "index.html",
@@ -14,16 +14,29 @@
   },
   "features": [
     {
-      "code": "plugin",
+      "code": "Jarvis feature list",
       "explain": "description",
       "cmds": [
-        "plugin",
+        "Jarvis feature list",
         "description",
         {
           "type": "files",
           "fileType": "file",
           "match": "/\\.(png|jpeg|jpg|webp)$/i",
           "label": "压缩图片"
+        }
+      ]
+    },
+    {
+      "code": "cURL2Func",
+      "explain": "cURL2Func 是一个将 cURL 命令转换为 TS 函数的工具",
+      "cmds": [
+        {
+          "type": "regex",
+          "label": "cURL To Func",
+          "match": "/curl/i",
+          "minLength": 1,
+          "maxLength": 9999999999999
         }
       ]
     }

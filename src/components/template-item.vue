@@ -1,6 +1,6 @@
 <template>这里是一个组件示例,计算属性值是{{ computedData }}</template>
 
-<style lang="scss" scoped></style>
+<style lang="less" scoped></style>
 
 <script lang="ts" setup>
 import { defineProps, computed } from "vue";
