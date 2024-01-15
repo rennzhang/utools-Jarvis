@@ -1,24 +1,32 @@
 // vite.config.js
 import vue from "@vitejs/plugin-vue";
-import { defineConfig } from "vite";
+import { defineConfig, loadEnv } from "vite";
 import path from "path";
-
+import UnoCSS from 'unocss/vite';
 function _resolve(dir: string) {
-    return path.resolve(__dirname, dir);
+  return path.resolve(__dirname, dir);
 }
 
-export default defineConfig({
-    resolve: {
-        alias: {
-            "@": _resolve("src")
-        },
+export default ({ mode }) => {
+  const env = loadEnv(mode, process.cwd(), "");
+  return defineConfig({
+    server: {
+      host: "127.0.0.1",
+      port: 3000,
     },
-    plugins: [
-        vue(),
-    ],
-    base: "./",
-    build: {
-        outDir: "src-utools/dist"
+    plugins: [vue(),UnoCSS()],
+    define: {
+      "process.env": env,
+    },
+    resolve: {
+      alias: {
+        "@": _resolve("src"),
+      },
     },
 
-});
+    base: "./",
+    build: {
+      outDir: "src-utools/dist",
+    },
+  });
+};

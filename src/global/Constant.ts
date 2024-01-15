@@ -8,7 +8,7 @@ export default {
     // 版本
     version: '',
     // 作者
-    author: '落雨不悔',
+    author: 'Renkin',
     // 仓库
     repo: '',
 }

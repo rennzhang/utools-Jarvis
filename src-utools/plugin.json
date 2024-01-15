@@ -1,32 +1,31 @@
 {
-    "main": "dist/index.html",
-    "preload": "preload.js",
-    "logo": "public/vite.svg",
-    "platform": [
-        "win32",
-        "darwin",
-        "linux"
-    ],
-    "development": {
-        "main": "http://localhost:5173/"
+  "main": "dist/index.html",
+  "preload": "preload.js",
+  "logo": "public/logo.png",
+  "platform": ["win32", "darwin", "linux"],
+  "development": {
+    "main": "http://127.0.0.1:3000/"
+  },
+  "features": [
+    {
+      "code": "launch",
+      "explain": "vite-utools-template",
+      "icon": "public/logo.png",
+      "platform": ["win32", "darwin", "linux"],
+      "cmds": ["vite"]
     },
-    "pluginSetting": {
-        "single": true,
-        "height": 0
-    },
-    "features": [
+    {
+      "code": "cURL2Func",
+      "explain": "cURL2Func 是一个将 cURL 命令转换为 TS 函数的工具",
+      "cmds": [
         {
-            "code": "launch",
-            "explain": "vite-utools-template",
-            "icon": "public/vite.svg",
-            "platform": [
-                "win32",
-                "darwin",
-                "linux"
-            ],
-            "cmds": [
-                "vite"
-            ]
+          "type": "regex",
+          "label": "cURL To Func",
+          "match": "/curl/i",
+          "minLength": 1,
+          "maxLength": 9999999999999
         }
-    ]
+      ]
+    }
+  ]
 }

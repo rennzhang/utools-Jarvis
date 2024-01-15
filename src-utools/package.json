@@ -1,13 +1,18 @@
 {
-  "name": "vite-utools-template",
   "version": "1.0.0",
-  "description": "",
+  "name": "jarvis",
+  "pluginName": "Jarvis",
+  "description": "Renkin`s Jarvis",
+  "author": "Renkin",
+  "homepage": "https://github.com/rennzhang",
   "main": "preload.js",
-  "author": "",
   "license": "MIT",
   "type": "commonjs",
   "dependencies": {},
   "devDependencies": {
+    "@bany/curl-to-json": "^1.2.8",
+    "lodash-es": "^4.17.21",
+    "json-to-ts": "^1.7.0",
     "@types/node": "^20.4.10",
     "utools-api-types": "^4.0.0"
   }
