@@ -1,19 +1,27 @@
-# vite的utools模板
+# utools-Jarvis
 
 ## 使用说明
 
-src-utools目录为utools项目目录，新建utools项目后，设置`plugin.json`为`src-utools`的`plugin.json`。
+utools 开发工具
 
-图标请放在`src-utools/public`中，如果打包`web`版，请按照vite方式处理。
+## 功能
 
-在`src-utools/preload.js`中写入代码后，挂载到`window.preload`上，修改`src/vite-env.d.ts`文件，将定义写在`preload`中。
+### CURL to Function
 
-请修改`src/global/Constant`中的项目信息
+说明：
+
+- 将 一段 cURL 转换为带类型的前端接口函数
+
+使用方法：
+
+- 复制一段 `CURL`,
+- 打开 utools 自动匹配 cURL2Func 工具
+- 回车直接复制到当前鼠标激活位置（当前系统剪贴板中也有）
+
+效果如下：
+
+- ![](./public/cURL2Func.gif)
 
 ## 打包
 
 先在主目录下执行`pnpm build`进行打包，打包后的资源在`src-utools/dist`中，打包`src-utools`目录即可。
-
-## 注意
-
-vite项目中，所有的静态资源引用都要使用相对路径，不能使用绝对路径
